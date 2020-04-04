@@ -4,4 +4,5 @@ dhcp customers will be listed here and dhcp server installed on unix systems. my
 -dhcp customers are listed here and recorded in the mysql database.
 -dhcpd.leases file is checked every 300 seconds and if there is a change, the ip list is checked and the new ip values added are also recorded in the database
 
+###Angular ScreenShot image about program and  how it works
 ![Angular ScreenShot](eg.png)
