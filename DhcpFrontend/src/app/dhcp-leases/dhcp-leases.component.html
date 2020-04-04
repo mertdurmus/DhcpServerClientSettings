@@ -1,0 +1,25 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+      <h1>All Clients</h1>
+  </div>
+  <div class="panel-body">
+      <table  *ngIf="leases" class="table table-striped table-bordered">
+          <thead class="thead-dark">
+              <tr>
+                <th >ipAddress</th>
+                <th >Mac</th>
+                <th >startTime</th>
+                <th >endTime</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let x of leases" >
+                <td class="bg-info" >{{ x.ipAddress }}</td>
+                <td class="bg-warning">{{ x.Mac }}</td>
+                <td class="bg-info">{{ x.startTime }}</td>
+                <td class="bg-info">{{ x.endTime }}</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</div>
